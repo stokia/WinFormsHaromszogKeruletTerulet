@@ -47,8 +47,8 @@ namespace WinFormsHaromszogKeruletTerulet
         {
             if (!(a < b + c) || !(b < a + c) || !(c < b + a)) /* haromszog tetele: 1 oldal hossza nem lehet nagyobb a masik 2 oldal hosszanak osszegevel, a tetelt megforditom (!) operatorral */
             {
-                labelKerulet.Text = "Kerület:" + " Nem számítható ki";
-                labelTerulet.Text = "Terület:" + " Nem számítható ki";
+                labelKerulet.Text = "Kerület: " + " Nem számítható ki";
+                labelTerulet.Text = "Terület: " + " Nem számítható ki";
                 labelHibauzenet.Text = "A háromszög bármely oldala nem lehet nagyobb a másik kettõ oldal összegénél!";
 
             }
@@ -60,8 +60,8 @@ namespace WinFormsHaromszogKeruletTerulet
                 s = kerulet / 2;
                 terulet = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
 
-                labelKerulet.Text = "Kerület:" + kerulet.ToString();
-                labelTerulet.Text = "Terület:" + terulet.ToString();
+                labelKerulet.Text = "Kerület: " + kerulet.ToString();
+                labelTerulet.Text = "Terület: " + terulet.ToString();
             }
 
         }
