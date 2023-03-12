@@ -45,7 +45,9 @@
             // flowLayoutPanel1
             // 
             resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.BackgroundImage = Properties.Resources.haromszog_256;
             flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // textBoxA
             // 
