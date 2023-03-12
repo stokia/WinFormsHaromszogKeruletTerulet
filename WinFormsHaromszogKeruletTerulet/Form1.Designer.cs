@@ -30,14 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             flowLayoutPanel1 = new FlowLayoutPanel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label1 = new Label();
-            textBox3 = new TextBox();
-            bOldal = new Label();
-            label3 = new Label();
-            TextKerulet = new Label();
-            TextTerulet = new Label();
+            textBoxA = new TextBox();
+            textBoxB = new TextBox();
+            labelA = new Label();
+            textBoxC = new TextBox();
+            labelB = new Label();
+            labelC = new Label();
+            labelKerulet = new Label();
+            labelTerulet = new Label();
+            button1 = new Button();
+            labelHibauzenet = new Label();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -45,62 +47,76 @@
             resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
-            // textBox1
+            // textBoxA
             // 
-            resources.ApplyResources(textBox1, "textBox1");
-            textBox1.Name = "textBox1";
+            resources.ApplyResources(textBoxA, "textBoxA");
+            textBoxA.Name = "textBoxA";
             // 
-            // textBox2
+            // textBoxB
             // 
-            resources.ApplyResources(textBox2, "textBox2");
-            textBox2.Name = "textBox2";
+            resources.ApplyResources(textBoxB, "textBoxB");
+            textBoxB.Name = "textBoxB";
             // 
-            // label1
+            // labelA
             // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
-            label1.Click += label1_Click;
+            resources.ApplyResources(labelA, "labelA");
+            labelA.Name = "labelA";
+            labelA.Click += label1_Click;
             // 
-            // textBox3
+            // textBoxC
             // 
-            resources.ApplyResources(textBox3, "textBox3");
-            textBox3.Name = "textBox3";
+            resources.ApplyResources(textBoxC, "textBoxC");
+            textBoxC.Name = "textBoxC";
             // 
-            // bOldal
+            // labelB
             // 
-            resources.ApplyResources(bOldal, "bOldal");
-            bOldal.Name = "bOldal";
-            bOldal.Click += bOldal_Click;
+            resources.ApplyResources(labelB, "labelB");
+            labelB.Name = "labelB";
+            labelB.Click += bOldal_Click;
             // 
-            // label3
+            // labelC
             // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
-            label3.Click += label3_Click;
+            resources.ApplyResources(labelC, "labelC");
+            labelC.Name = "labelC";
+            labelC.Click += label3_Click;
             // 
-            // TextKerulet
+            // labelKerulet
             // 
-            resources.ApplyResources(TextKerulet, "TextKerulet");
-            TextKerulet.Name = "TextKerulet";
-            TextKerulet.Click += label2_Click;
+            resources.ApplyResources(labelKerulet, "labelKerulet");
+            labelKerulet.Name = "labelKerulet";
+            labelKerulet.Click += label2_Click;
             // 
-            // TextTerulet
+            // labelTerulet
             // 
-            resources.ApplyResources(TextTerulet, "TextTerulet");
-            TextTerulet.Name = "TextTerulet";
+            resources.ApplyResources(labelTerulet, "labelTerulet");
+            labelTerulet.Name = "labelTerulet";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // labelHibauzenet
+            // 
+            resources.ApplyResources(labelHibauzenet, "labelHibauzenet");
+            labelHibauzenet.Name = "labelHibauzenet";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(TextTerulet);
-            Controls.Add(TextKerulet);
-            Controls.Add(label3);
-            Controls.Add(bOldal);
-            Controls.Add(textBox3);
-            Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(labelHibauzenet);
+            Controls.Add(button1);
+            Controls.Add(labelTerulet);
+            Controls.Add(labelKerulet);
+            Controls.Add(labelC);
+            Controls.Add(labelB);
+            Controls.Add(textBoxC);
+            Controls.Add(labelA);
+            Controls.Add(textBoxB);
+            Controls.Add(textBoxA);
             Controls.Add(flowLayoutPanel1);
             Name = "Form1";
             Load += Form1_Load;
@@ -111,13 +127,15 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label1;
-        private TextBox textBox3;
-        private Label bOldal;
-        private Label label3;
-        private Label TextKerulet;
-        private Label TextTerulet;
+        private TextBox textBoxA;
+        private TextBox textBoxB;
+        private Label labelA;
+        private TextBox textBoxC;
+        private Label labelB;
+        private Label labelC;
+        private Label labelKerulet;
+        private Label labelTerulet;
+        private Button button1;
+        private Label labelHibauzenet;
     }
 }
